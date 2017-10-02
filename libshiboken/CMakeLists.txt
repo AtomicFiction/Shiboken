@@ -43,7 +43,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}
                     ${CMAKE_CURRENT_BINARY_DIR}
                     ${SBK_PYTHON_INCLUDE_DIR}
                     ${SPARSEHASH_INCLUDE_PATH})
-add_library(libshiboken SHARED ${libshiboken_SRC})
+add_library(libshiboken STATIC ${libshiboken_SRC})
 target_link_libraries(libshiboken ${SBK_PYTHON_LIBRARIES})
 set_target_properties(libshiboken PROPERTIES OUTPUT_NAME "shiboken${shiboken_SUFFIX}${PYTHON_SUFFIX}"
                                              VERSION ${libshiboken_VERSION}
