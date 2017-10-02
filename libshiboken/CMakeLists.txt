@@ -39,6 +39,8 @@ typeresolver.cpp
 shibokenbuffer.cpp
 )
 
+ADD_DEFINITIONS(-fPIC)
+
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}
                     ${CMAKE_CURRENT_BINARY_DIR}
                     ${SBK_PYTHON_INCLUDE_DIR}
